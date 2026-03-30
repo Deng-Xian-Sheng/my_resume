@@ -276,6 +276,7 @@
 
 - 模型部署
   + ollama(个人或试验使用)
+  + llama.cpp（推理GGUF）
   + vllm(LLM、VLM高性能推理库)
   + 本地推理的人脸核身库
 
