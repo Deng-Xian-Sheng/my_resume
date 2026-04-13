@@ -18,6 +18,9 @@
     - [cmd-ai-dev AI编程工具](#cmd-ai-dev-ai编程工具)
       - [特点](#特点)
     - [爬虫相关的GitHub库](#爬虫相关的github库)
+    - [coding-daylog-skill](#coding-daylog-skill)
+    - [python-xprintidle](#python-xprintidle)
+    - [signal-server](#signal-server)
   - [工作地点](#工作地点)
   - [工资要求](#工资要求)
   - [远程面试](#远程面试)
@@ -57,7 +60,7 @@
 
 * **核心竞争力**：不仅掌握 Golang/Linux 服务端开发，还涉猎 LLM/Agent 这样的前沿技术。
 
-* **开源贡献**：活跃的开源贡献者，曾向 Deepin 操作系统([迁移方案][idb]/[壁纸][idc])、DiffSynth-Studio([int8微调][ida]) 、QwenCode([qwen3.5-plus bug][idd])等知名项目提交代码，拥有多个有价值个人开源项目。
+* **开源贡献**：活跃的开源贡献者，曾向 Deepin 操作系统([迁移方案](https://github.com/Deng-Xian-Sheng/deepin-v23-to-v25-python-script)/[壁纸](https://github.com/Deng-Xian-Sheng/DeepinV25-desktop-wallpaper))、DiffSynth-Studio([int8微调](https://github.com/modelscope/DiffSynth-Studio/pull/1101)) 、QwenCode([qwen3.5-plus bug](https://github.com/QwenLM/qwen-code/pull/2300))等知名项目提交代码，拥有多个有价值个人开源项目。
 
 * **工作风格**：极简实用主义，解决问题为导向，有单兵作战与技术攻关能力。
 
@@ -84,8 +87,9 @@
 
 内容：
 
-- 为知名开源项目QwenCode贡献代码（修复了`qwen3.5-plus`和`Qwen3.5-397B-A17B`模型bug，导致的文件路径损坏问题：[链接][idd]）
-
+- 为知名开源项目QwenCode贡献代码（修复了`qwen3.5-plus`和`Qwen3.5-397B-A17B`模型bug，导致的文件路径损坏问题：[链接](https://github.com/QwenLM/qwen-code/pull/2300)）
+- coding-daylog-skill，一个 Agent skill，它让 Agent 根据 git 提交，统计你今天做了什么：[链接](https://github.com/Deng-Xian-Sheng/coding-daylog-skill)
+- python-xprintidle，实现了从 X11 读取“用户未操作键盘、鼠标的持续时间”
 
 ### 山东尼诺智能科技有限公司
 
@@ -175,6 +179,34 @@
 
 链接：https://github.com/Deng-Xian-Sheng/Real-technology
 
+### coding-daylog-skill
+
+![代码截图](1776064808708.png)
+
+这是一个 Agent skill，它让 Agent 根据 git 提交，统计你今天做了什么
+
+链接：https://github.com/Deng-Xian-Sheng/coding-daylog-skill
+
+### python-xprintidle
+
+这是 [xprintidle](https://github.com/g0hl1n/xprintidle) 的 python 实现。
+
+python-xprintidle 实现了从 X11 读取“用户未操作键盘、鼠标的持续时间”
+
+python-xprintidle 取这个名称是因为 xprintidle 是 C 语言的，需要编译，为了这点功能去编译 C 比较重。
+
+而用 python 实现 xprintidle 不需要编译。 
+
+### signal-server
+
+![代码截图](1776065295815.png)
+
+基于 HTTP 的信令服务器，用于 WebRTC 的信令交换。
+
+它是使用Golang实现的。(gin + goframe gqueue)
+
+链接：https://github.com/Deng-Xian-Sheng/signal-server
+
 ## 工作地点
 
 我没有城市偏好，因为我没有房子，所以全国都可。
@@ -253,7 +285,7 @@
 
 <!-- 链接部分 -->
 
-[ida]: https://github.com/modelscope/DiffSynth-Studio/pull/1101 "Qwen-Image-Edit-2509模型的int8量化微调方法，大幅度降低显存占用"
+<!-- [ida]: https://github.com/modelscope/DiffSynth-Studio/pull/1101 "Qwen-Image-Edit-2509模型的int8量化微调方法，大幅度降低显存占用"
 [idb]: https://github.com/Deng-Xian-Sheng/deepin-v23-to-v25-python-script "v23～v25大版本系统迁移方案"
 [idc]: https://github.com/Deng-Xian-Sheng/DeepinV25-desktop-wallpaper "基于DeepinV25的无图标遮挡视频壁纸实现方案"
-[idd]: https://github.com/QwenLM/qwen-code/pull/2300 "修复了`qwen3.5-plus`和`Qwen3.5-397B-A17B`模型bug，导致的文件路径损坏问题"
+[idd]: https://github.com/QwenLM/qwen-code/pull/2300 "修复了`qwen3.5-plus`和`Qwen3.5-397B-A17B`模型bug，导致的文件路径损坏问题" -->

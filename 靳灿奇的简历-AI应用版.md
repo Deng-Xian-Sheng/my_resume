@@ -19,6 +19,10 @@
     - [用于LLM SFT训练的小说/文章数据清洗与合成](#用于llm-sft训练的小说文章数据清洗与合成)
       - [概述](#概述)
     - [DayLog](#daylog)
+    - [coding-daylog-skill](#coding-daylog-skill)
+    - [burn-after-reading（阅后即焚）](#burn-after-reading阅后即焚)
+    - [make\_data\_set\_so-vits-svc](#make_data_set_so-vits-svc)
+    - [call-to-llm](#call-to-llm)
   - [工作地点](#工作地点)
   - [工资要求](#工资要求)
   - [远程面试](#远程面试)
@@ -71,7 +75,7 @@
   
   * **本地部署**：了解 ollama/vllm/llama.cpp 等推理库，具备在 CPU/低显存环境下进行量化部署与性能优化的能力。
 
-* **开源贡献**：活跃的开源贡献者，曾向 Deepin 操作系统([迁移方案][idb]/[壁纸][idc])、DiffSynth-Studio([int8微调][ida]) 、QwenCode([qwen3.5-plus bug][idd])等知名项目提交代码，拥有多个有价值个人开源项目。
+* **开源贡献**：活跃的开源贡献者，曾向 Deepin 操作系统([迁移方案](https://github.com/Deng-Xian-Sheng/deepin-v23-to-v25-python-script)/[壁纸](https://github.com/Deng-Xian-Sheng/DeepinV25-desktop-wallpaper))、DiffSynth-Studio([int8微调](https://github.com/modelscope/DiffSynth-Studio/pull/1101)) 、QwenCode([qwen3.5-plus bug](https://github.com/QwenLM/qwen-code/pull/2300))等知名项目提交代码，拥有多个有价值个人开源项目。
 
 * **工作风格**：极简实用主义，解决问题为导向，有单兵作战与技术攻关能力。
 
@@ -102,12 +106,14 @@
 
 - 发布了一个基于yolo用于识别闲鱼网页上消息红点的模型：[链接](https://huggingface.co/likewendy/red-dot_yolov12n_object_detection)
 - 发布了一个基于流浪地球2图丫丫角色训练的Flux lora：[链接](https://huggingface.co/likewendy/flux-dev-tu-ya-ya)
-- 为modelscope开源的国产文生图模型推理训练框架DiffSynth-Studio添加Qwen-Image-Edit-2509模型的int8量化微调方法，大幅度降低显存占用：[链接][ida]
-- 为国产操作系统Deepin社区贡献v23～v25大版本系统迁移方案：[链接][idb]、基于DeepinV25的无图标遮挡视频壁纸实现方案：[链接][idc]
+- 为modelscope开源的国产文生图模型推理训练框架DiffSynth-Studio添加Qwen-Image-Edit-2509模型的int8量化微调方法，大幅度降低显存占用：[链接](https://github.com/modelscope/DiffSynth-Studio/pull/1101)
+- 为国产操作系统Deepin社区贡献v23～v25大版本系统迁移方案：[链接](https://github.com/Deng-Xian-Sheng/deepin-v23-to-v25-python-script)、基于DeepinV25的无图标遮挡视频壁纸实现方案：[链接](https://github.com/Deng-Xian-Sheng/DeepinV25-desktop-wallpaper)
 - 更新10余篇有价值的 大模型微调/推理/智能体 实施方法：[链接](https://github.com/Deng-Xian-Sheng/Real-technology)
 - 修改Meta公司音频分割模型sam-audio的开源仓库，降低了推理时显存需求与多模型依赖，并编写了gradio以方便的使用模型：[链接](https://cnb.cool/CanQiJin/sam-audio-large)
 - DayLog软件所需模型的数据集爬取、合成和模型训练。
-- 为知名开源项目QwenCode贡献代码（修复了`qwen3.5-plus`和`Qwen3.5-397B-A17B`模型bug，导致的文件路径损坏问题：[链接][idd]）
+- 为知名开源项目QwenCode贡献代码（修复了`qwen3.5-plus`和`Qwen3.5-397B-A17B`模型bug，导致的文件路径损坏问题：[链接](https://github.com/QwenLM/qwen-code/pull/2300)）
+- coding-daylog-skill，一个 Agent skill，它让 Agent 根据 git 提交，统计你今天做了什么：[链接](https://github.com/Deng-Xian-Sheng/coding-daylog-skill)
+- burn-after-reading（阅后即焚），一个“阅后即焚”的图片分享 Web 应用：[链接](https://github.com/Deng-Xian-Sheng/burn-after-reading)
 
 ### 山东尼诺智能科技有限公司
 
@@ -195,6 +201,66 @@
 - 仍在开发：模型已训练完成，许可证服务和桌面端正在开发。
 
 ![ide截图](daylog.png)
+
+### coding-daylog-skill
+
+![代码截图](1776064808708.png)
+
+这是一个 Agent skill，它让 Agent 根据 git 提交，统计你今天做了什么
+
+链接：https://github.com/Deng-Xian-Sheng/coding-daylog-skill
+
+### burn-after-reading（阅后即焚）
+
+- 主界面
+![界面](1776064473940.png)
+
+- 加载中
+![界面2](1776064548307.png)
+
+- 链接失效
+![界面3](1776064585616.png)
+
+- 切换标签页或将浏览器放到后台，会焚毁
+![界面4](1776064698250.png)
+
+一个“阅后即焚”的图片分享 Web 应用
+
+> 这是一个 100% vibe coding 项目。
+> 
+> 我一行代码都没写，完全由 codex 进行开发、部署。
+> 
+> 我负责项目设计，探索并选择技术栈。
+
+在线demo：https://burn.daylog.top
+
+链接：https://github.com/Deng-Xian-Sheng/burn-after-reading
+
+### make_data_set_so-vits-svc
+
+![运行示例](1776064351854.png)
+
+这个项目实现了语音的气口切分、增益均衡，并提供了一个 GUI 的音频片段审核界面。
+
+用于辅助 so-vits-svc(音色迁移) 数据集制作，它实现了数据集制作环节的音频切分与检查。
+
+链接：https://github.com/Deng-Xian-Sheng/make_data_set_so-vits-svc
+
+### call-to-llm
+
+![演示图片-ipad](IMG_2870.png)
+
+![演示图片-iphone](IMG_2871.png)
+
+一个 html 文件，通过 VAD 和 OpenAI Audio API 实现了语音对话。
+
+通过调用 gpt4o 等带视觉的模型实现解读画面。
+
+演示视频：[实现OpenAI的ChatGPT视频聊天-哔哩哔哩](https://b23.tv/UN5KB9i)
+
+代码仓库链接：https://github.com/Deng-Xian-Sheng/call-to-llm
+
+这个项目大部分是使用AI开发的。
 
 ## 工作地点
 
@@ -312,7 +378,7 @@
 
 <!-- 链接部分 -->
 
-[ida]: https://github.com/modelscope/DiffSynth-Studio/pull/1101 "Qwen-Image-Edit-2509模型的int8量化微调方法，大幅度降低显存占用"
+<!-- [ida]: https://github.com/modelscope/DiffSynth-Studio/pull/1101 "Qwen-Image-Edit-2509模型的int8量化微调方法，大幅度降低显存占用"
 [idb]: https://github.com/Deng-Xian-Sheng/deepin-v23-to-v25-python-script "v23～v25大版本系统迁移方案"
 [idc]: https://github.com/Deng-Xian-Sheng/DeepinV25-desktop-wallpaper "基于DeepinV25的无图标遮挡视频壁纸实现方案"
-[idd]: https://github.com/QwenLM/qwen-code/pull/2300 "修复了`qwen3.5-plus`和`Qwen3.5-397B-A17B`模型bug，导致的文件路径损坏问题"
+[idd]: https://github.com/QwenLM/qwen-code/pull/2300 "修复了`qwen3.5-plus`和`Qwen3.5-397B-A17B`模型bug，导致的文件路径损坏问题" -->
