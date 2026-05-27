@@ -14,6 +14,7 @@
     - [山东尼诺智能科技有限公司](#山东尼诺智能科技有限公司)
     - [济南黑马网络技术有限公司](#济南黑马网络技术有限公司)
   - [我的项目](#我的项目)
+    - [Google搜索 skill](#google搜索-skill)
     - [golang hosts文件编辑库](#golang-hosts文件编辑库)
     - [Linux防误删除](#linux防误删除)
     - [cmd-ai-dev AI编程工具](#cmd-ai-dev-ai编程工具)
@@ -161,6 +162,18 @@
 - 工作流程混乱
 
 ## 我的项目
+
+### Google搜索 skill
+
+轻量级的搜索SKILL，无需API，通过 golang 的 chromedp 驱动本地 Chrome 浏览器执行 Google 搜索，返回搜索结果。
+
+![仓库截图](1779899358910.png)
+
+claude code上使用截图：
+
+![cc使用截图](1779896394323.png)
+
+仓库链接：https://github.com/Deng-Xian-Sheng/cdp-search-google-skill
 
 ### golang hosts文件编辑库
 

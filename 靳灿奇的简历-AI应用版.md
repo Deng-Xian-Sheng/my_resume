@@ -14,6 +14,8 @@
     - [山东尼诺智能科技有限公司](#山东尼诺智能科技有限公司)
     - [济南黑马网络技术有限公司](#济南黑马网络技术有限公司)
   - [我的项目](#我的项目)
+    - [Google搜索 skill](#google搜索-skill)
+    - [DeepSeek官网反代](#deepseek官网反代)
     - [影刀RPA b站视频收藏](#影刀rpa-b站视频收藏)
     - [cmd-ai-dev AI编程工具](#cmd-ai-dev-ai编程工具)
       - [特点](#特点)
@@ -179,6 +181,36 @@
 - 工作流程混乱
 
 ## 我的项目
+
+### Google搜索 skill
+
+轻量级的搜索SKILL，无需API，通过 golang 的 chromedp 驱动本地 Chrome 浏览器执行 Google 搜索，返回搜索结果。
+
+![仓库截图](1779899358910.png)
+
+claude code上使用截图：
+
+![cc使用截图](1779896394323.png)
+
+仓库链接：https://github.com/Deng-Xian-Sheng/cdp-search-google-skill
+
+### DeepSeek官网反代
+
+通过继承 litellm proxy 的 CustomLLM 类，将chat.deepseek.com 的 API 封装成 OpenAI/Anthropic API。
+
+实现过程：
+- 刷新网页从头开始记录与模型对话时产生的请求，保存为 .har 文件
+- 通过 .har 下载必要的js、wasm以分析
+- 通过 Babel AST 将一个js文件提取成多个模块js文件
+- 分析js、反编译wasm以获得PoW挑战算法实现
+- 分析 .har 文件搞清楚请求链条
+- 分析每个请求的具体传入传出参数
+- 结合litellm文档设计开发方案
+- 编写代码、测试、bug修复
+
+![仓库截图](1779896945428.png)
+
+目前，这是一个个人的闭源项目
 
 ### 影刀RPA b站视频收藏
 
