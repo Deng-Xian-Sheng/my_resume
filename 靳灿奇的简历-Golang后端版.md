@@ -263,6 +263,8 @@ python-xprintidle 取这个名称是因为 xprintidle 是 C 语言的，需要�
 
 武汉
 
+同时也考虑其他城市
+
 ## 工资要求
 
 <!-- 高 -->
